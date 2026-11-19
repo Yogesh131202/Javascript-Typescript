@@ -1,6 +1,4 @@
-import type { User } from "../types";
-
-export async function getUsers(): Promise<User[]> {
+export async function getUsers() {
   const res = await fetch("/api/users");
   if (!res.ok) throw new Error("Failed to fetch users");
   return res.json();

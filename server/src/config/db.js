@@ -1,7 +1,7 @@
-import { env } from "./env";
+import { env } from "./env.js";
 
-// Plug in your database here (Mongoose, Prisma, TypeORM, pg, ...).
-export async function connectDB(): Promise<void> {
+// Plug in your database here (Mongoose, Prisma, pg, ...).
+export async function connectDB() {
   if (!env.databaseUrl) {
     console.log("No DATABASE_URL set, using in-memory data.");
     return;

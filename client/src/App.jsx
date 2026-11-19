@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { getUsers } from "./services/api";
-import type { User } from "./types";
 
 export default function App() {
-  const [users, setUsers] = useState<User[]>([]);
+  const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
 
   useEffect(() => {
