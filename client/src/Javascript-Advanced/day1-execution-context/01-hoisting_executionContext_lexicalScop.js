@@ -54,6 +54,8 @@ let x = 10;
 function outer() {
     let x = 20;
 
+    console.log(x);
+
     function inner() {
         let x = 30;
         console.log(x);
@@ -61,5 +63,7 @@ function outer() {
 
     inner();
 }
-
 outer();
+
+console.log(x);
+
